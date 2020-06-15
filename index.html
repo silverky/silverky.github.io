@@ -1,6 +1,5 @@
 
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -8,7 +7,40 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="assets/main/css/main.css?v=9e86342a96">
+    <style>
+      /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
+      @font-face {
+        font-family: 'icomoon';
+        src: url("assets/fonts/icomoon.eot?vukg2s?v=dd1875eb09");
+        src: url("assets/fonts/icomoon.eot?vukg2s") format('embedded-opentype'),
+        url("assets/fonts/icomoon.ttf?vukg2s?v=dd1875eb09") format('truetype'),
+        url("assets/fonts/icomoon.woff?vukg2s?v=dd1875eb09") format('woff'),
+        url("assets/fonts/icomoon.svg?vukg2s") format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css?v=dd1875eb09" media="screen">
+
+      <style>
+    .m-hero__picture {
+      background-image: url(https://static.ghost.org/v3.0.0/images/publication-cover.png);
+    }
+  
+    @media(max-width: 1000px) {
+      .m-hero__picture {
+        background-image: url(https://static.ghost.org/v3.0.0/images/publication-cover.png);
+      }
+    }
+  
+    @media(max-width: 600px) {
+      .m-hero__picture {
+        background-image: url(https://static.ghost.org/v3.0.0/images/publication-cover.png);
+      }
+    }
+  </style>
+
 
     <meta name="description" content="Stories about code">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -62,104 +94,354 @@
     <meta name="generator" content="Ghost 3.19">
     <link rel="alternate" type="application/rss+xml" title="CodePod" href="rss/index.html">
 
-</head>
-<body class="is-preload home-template">
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "http://localhost:2368"
+      // @license-end
+    </script>
 
-    <div id="wrapper">
-        <main id="main">
-            <div class="inner">
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      WebFontConfig = {
+        google: { families: ['Source+Sans+Pro:400,600,700&display=swap'] }
+      };
 
-                <header id="header">
-                        <a href="index.html" class="logo">CodePod</a>
-                    <ul class="icons">
-                        <!---<li><a href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a></li> --->
-                    </ul>
-                </header>
+      (function (d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+      // @license-end
+    </script>
+  </head>
+  <body class="home-template">
+    
 
+<div class="main-wrap">
+  
+<header class="m-header with-picture js-header">
+  <div class="m-mobile-topbar" data-aos="fade-down">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+      <span class="icon-menu"></span>
+    </button>
+      <a href="index.html" class="m-site-name in-mobile-topbar">
+        CodePod
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
+      <span class="icon-search"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main" data-aos="fade-down">
+      <div class="l-wrapper">
+        <div class="m-nav">
+          <nav class="m-nav__left">
+            <ul role="submenu">
+                <li class="only-desktop" role="menuitem">
+                  <a href="index.html" class="m-site-name in-desktop-menu">
+                    CodePod
+                  </a>
+                </li>
                 
+    <li class="nav-home nav-current" role="menuitem">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="nav-about-me" role="menuitem">
+      <a href="about-me/">About me</a>
+    </li>
 
-
-<section>
-
-    <header class="major">
-        <h2>Recent posts</h2>
-    </header>
-
-    <section class="posts">
-        <article>
-            <h3><a href="deploy-spring-boot-microservices-on-kubernetes/">Deploy Spring Boot microservices on Kubernetes</a></h3>
-            <p>SummarySpring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app</p>
-            <ul class="actions special">
-                <li><a href="deploy-spring-boot-microservices-on-kubernetes/" class="button">Full Story</a></li>
+              <li role="menuitem" class="js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Toggle submenu">
+                  <span class="icon-more"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
+                      <div class="js-recent-articles">
+                            <div>
+                              <a href="build-fault-tolerant-microservices/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Build fault-tolerant microservices">
+                                  Build fault-tolerant microservices
+                                </h3>
+                                <span class="m-recent-article__date">an hour ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="build-a-secure-microservices-based-banking-application/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Build a secure microservices-based banking application">
+                                  Build a secure microservices-based banking application
+                                </h3>
+                                <span class="m-recent-article__date">an hour ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="design-and-deliver-a-rest-based-cloud-native-application-at-lightning-speed/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Design and deliver a REST-based, cloud-native application at lightning speed">
+                                  Design and deliver a REST-based, cloud-native application at lightning speed
+                                </h3>
+                                <span class="m-recent-article__date">an hour ago</span>
+                              </a>
+                            </div>
+                            <div>
+                              <a href="deploy-spring-boot-microservices-on-kubernetes/" class="m-recent-article">
+                                <div class="m-recent-article__picture">
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                </div>
+                                <h3 class="m-recent-article__title js-recent-article-title" title="Deploy Spring Boot microservices on Kubernetes">
+                                  Deploy Spring Boot microservices on Kubernetes
+                                </h3>
+                                <span class="m-recent-article__date">5 hours ago</span>
+                              </a>
+                            </div>
+                      </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">Tags</h3>
+                        <ul>
+                            <li>
+                              <a href="tag/kubernetes/">Kubernetes</a>
+                            </li>
+                            <li>
+                              <a href="tag/cloud/">cloud</a>
+                            </li>
+                            <li>
+                              <a href="tag/microservices/">microservices</a>
+                            </li>
+                            <li>
+                              <a href="tag/rest/">rest</a>
+                            </li>
+                            <li>
+                              <a href="tag/spring/">spring</a>
+                            </li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
             </ul>
-        </article>
-        <article>
-            <h3><a href="makdown/">Makdown</a></h3>
-            <p>TextIt's very easy to make some words bold and other words italic with Markdown. You can even link to Google! ListSometimes you want numbered lists: OneTwoThreeSometimes you want bullet points: Start a line</p>
-            <ul class="actions special">
-                <li><a href="makdown/" class="button">Full Story</a></li>
-            </ul>
-        </article>
-    </section>
-
-</section>
-
-<footer>
-    <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 1</span>
-    </nav>
-</footer>
-
-
-
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search" aria-label="Open search">
+              <span class="icon-search"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="Toggle dark mode">
+              <input type="checkbox" class="js-toggle-darkmode">
+              <div></div>
             </div>
-        </main>
-
-        <div id="sidebar">
-    <div class="inner">
-
-            <nav id="menu">
-    <header class="major">
-        <h2>Menu</h2>
-    </header>
-    <ul class="links">
-        <li class="nav-home active"><a href="index.html">Home</a></li>
-        <li class="nav-about-me "><a href="about-me/">About me</a></li>
-    </ul>
-</nav>
-
-        <section>
-            <header class="major">
-                <h2>Recent Posts</h2>
-            </header>
-            <div class="mini-posts">
-                    <article>
-                        <h3><a href="deploy-spring-boot-microservices-on-kubernetes/">Deploy Spring Boot microservices on Kubernetes</a></h3>
-                        <p>SummarySpring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows</p>
-                    </article>
-                    <article>
-                        <h3><a href="makdown/">Makdown</a></h3>
-                        <p>TextIt's very easy to make some words bold and other words italic with Markdown. You</p>
-                    </article>
-            </div>
-        </section>
-
-
-        <footer id="footer">
-            <p class="copyright">© CodePod - All rights reserved<br>            
-        </p></footer>
-
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+</header>
+  
+
+  <section class="m-hero with-picture" data-aos="fade">
+    <div class="m-hero__picture "></div>
+  <div class="m-hero__content" data-aos="fade-down">
+    <h1 class="m-hero-title bigger">CodePod</h1>
+      <p class="m-hero-description bigger">Thoughts, stories and ideas about code</p>
+  </div>
+  </section>
+  
+  <main>
+    <div class="l-content">
+      <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
+        <div class="l-grid centered">
+          
+    <article class="m-article-card no-picture post tag-microservices no-image">
+      <div class="m-article-card__picture">
+      <a href="build-fault-tolerant-microservices/" class="m-article-card__picture-link" aria-label="Article"></a>
+      <a href="author/dungbv/" class="m-article-card__author js-tooltip" aria-label="Authors" data-tippy-content="Posted by dungbv ">
+          <div style="background-image: url(assets/images/default-avatar-square-small.jpg?v=dd1875eb09);"></div>
+      </a>
+    </div>
+      <div class="m-article-card__info">
+        <a href="tag/microservices/" class="m-article-card__tag">microservices</a>
+      <a href="build-fault-tolerant-microservices/" class="m-article-card__info-link">
+        <div>
+          <h2 class="m-article-card__title js-article-card-title js-article-card-title-no-image" title="Build fault-tolerant microservices">
+            Build fault-tolerant microservices
+          </h2>
+        </div>
+        <div class="m-article-card__timestamp">
+          <span>an hour ago</span>
+          <span>•</span>
+          <span>2 min read</span>
+        </div>
+      </a>
+    </div>
+  </article>
+    <article class="m-article-card no-picture post no-image">
+      <div class="m-article-card__picture">
+      <a href="build-a-secure-microservices-based-banking-application/" class="m-article-card__picture-link" aria-label="Article"></a>
+      <a href="author/dungbv/" class="m-article-card__author js-tooltip" aria-label="Authors" data-tippy-content="Posted by dungbv ">
+          <div style="background-image: url(assets/images/default-avatar-square-small.jpg?v=dd1875eb09);"></div>
+      </a>
+    </div>
+      <div class="m-article-card__info no-tag">
+      <a href="build-a-secure-microservices-based-banking-application/" class="m-article-card__info-link">
+        <div>
+          <h2 class="m-article-card__title js-article-card-title js-article-card-title-no-image" title="Build a secure microservices-based banking application">
+            Build a secure microservices-based banking application
+          </h2>
+        </div>
+        <div class="m-article-card__timestamp">
+          <span>an hour ago</span>
+          <span>•</span>
+          <span>1 min read</span>
+        </div>
+      </a>
+    </div>
+  </article>
+    <article class="m-article-card no-picture post tag-cloud tag-rest no-image">
+      <div class="m-article-card__picture">
+      <a href="design-and-deliver-a-rest-based-cloud-native-application-at-lightning-speed/" class="m-article-card__picture-link" aria-label="Article"></a>
+      <a href="author/dungbv/" class="m-article-card__author js-tooltip" aria-label="Authors" data-tippy-content="Posted by dungbv ">
+          <div style="background-image: url(assets/images/default-avatar-square-small.jpg?v=dd1875eb09);"></div>
+      </a>
+    </div>
+      <div class="m-article-card__info">
+        <a href="tag/cloud/" class="m-article-card__tag">cloud</a>
+      <a href="design-and-deliver-a-rest-based-cloud-native-application-at-lightning-speed/" class="m-article-card__info-link">
+        <div>
+          <h2 class="m-article-card__title js-article-card-title js-article-card-title-no-image" title="Design and deliver a REST-based, cloud-native application at lightning speed">
+            Design and deliver a REST-based, cloud-native application at lightning speed
+          </h2>
+        </div>
+        <div class="m-article-card__timestamp">
+          <span>an hour ago</span>
+          <span>•</span>
+          <span>5 min read</span>
+        </div>
+      </a>
+    </div>
+  </article>
+    <article class="m-article-card no-picture post tag-spring tag-kubernetes no-image">
+      <div class="m-article-card__picture">
+      <a href="deploy-spring-boot-microservices-on-kubernetes/" class="m-article-card__picture-link" aria-label="Article"></a>
+      <a href="author/dungbv/" class="m-article-card__author js-tooltip" aria-label="Authors" data-tippy-content="Posted by dungbv ">
+          <div style="background-image: url(assets/images/default-avatar-square-small.jpg?v=dd1875eb09);"></div>
+      </a>
+    </div>
+      <div class="m-article-card__info">
+        <a href="tag/spring/" class="m-article-card__tag">spring</a>
+      <a href="deploy-spring-boot-microservices-on-kubernetes/" class="m-article-card__info-link">
+        <div>
+          <h2 class="m-article-card__title js-article-card-title js-article-card-title-no-image" title="Deploy Spring Boot microservices on Kubernetes">
+            Deploy Spring Boot microservices on Kubernetes
+          </h2>
+        </div>
+        <div class="m-article-card__timestamp">
+          <span>5 hours ago</span>
+          <span>•</span>
+          <span>2 min read</span>
+        </div>
+      </a>
+    </div>
+  </article>
+        </div>
+      </div>
+      
+<div class="l-wrapper">
+  <nav class="m-pagination">
+    <span class="m-pagination__text">Page 1 of 1</span>
+  </nav>
 </div>
 
     </div>
+  </main>
+</div>
 
-    <script src="assets/main/js/jquery.min.js?v=9e86342a96"></script>
-    <script src="assets/main/js/browser.min.js?v=9e86342a96"></script>
-    <script src="assets/main/js/breakpoints.min.js?v=9e86342a96"></script>
-    <script src="assets/main/js/util.js?v=9e86342a96"></script>
-    <script src="assets/main/js/main.js?v=9e86342a96"></script>
+
 
     
+<div class="m-search js-search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <fieldset>
+        <span class="icon-search m-search-icon"></span>
+        <input type="text" class="m-input in-search js-input-search" placeholder="Type to search" aria-label="Type to search">
+      </fieldset>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
 
-</body>
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <p class="m-footer-copyright">
+      <span>CodePod © 2020</span>
+      <span>  •  </span>
+      <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+
+    <nav class="m-footer-social">
+    </nav>
+    <p class="m-footer-copyright jslicense">
+      <a href="assets/html/javascript.html?v=dd1875eb09" rel="jslicense">JavaScript license information</a>
+    </p>
+  </div>
+</footer>
+
+    <div class="m-alert success subscribe js-alert" data-notification="subscribe">
+  Great! You've successfully subscribed.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success signup js-alert" data-notification="signup">
+  Great! Next, complete checkout for full access.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success signin js-alert" data-notification="signin">
+  Welcome back! You've successfully signed in.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+
+<div class="m-alert success checkout js-alert" data-notification="checkout">
+  Success! Your account is fully activated, you now have access to all content.
+  <button class="m-alert__close js-notification-close" aria-label="Close">
+    <span class="icon-close"></span>
+  </button>
+</div>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
+    <script defer src="assets/js/vendor/content-api.min.js?v=dd1875eb09"></script>
+    <script defer src="assets/js/manifest.js?v=dd1875eb09"></script>
+    <script defer src="assets/js/vendor.js?v=dd1875eb09"></script>
+    <script defer src="assets/js/app.js?v=dd1875eb09"></script>
+
+      <script defer src="assets/js/home.js?v=dd1875eb09"></script>
+
+
+    
+  </body>
