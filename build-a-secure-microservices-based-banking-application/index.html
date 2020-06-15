@@ -1,48 +1,49 @@
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Build a secure microservices-based banking application</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
       /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
       @font-face {
         font-family: 'icomoon';
-        src: url("../assets/fonts/icomoon.eot?vukg2s?v=dd1875eb09");
+        src: url("../assets/fonts/icomoon.eot?vukg2s?v=7677c2481e");
         src: url("../assets/fonts/icomoon.eot?vukg2s") format('embedded-opentype'),
-        url("../assets/fonts/icomoon.ttf?vukg2s?v=dd1875eb09") format('truetype'),
-        url("../assets/fonts/icomoon.woff?vukg2s?v=dd1875eb09") format('woff'),
+        url("../assets/fonts/icomoon.ttf?vukg2s?v=7677c2481e") format('truetype'),
+        url("../assets/fonts/icomoon.woff?vukg2s?v=7677c2481e") format('woff'),
         url("../assets/fonts/icomoon.svg?vukg2s") format('svg');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="../assets/css/app.css?v=dd1875eb09" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css?v=7677c2481e" media="screen" />
 
     
 
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="index.html">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="amp/index.html">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="amp/index.html" />
     
-    <meta property="og:site_name" content="CodePod">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Build a secure microservices-based banking application">
-    <meta property="og:description" content="SummaryIn this code pattern, we demonstrate the security and orchestration of microservices using a personal banking use-case scenario. DescriptionIn a microservices-based solution, security and orchestration of workflows are common requirements. By using IBM API Connect for OAuth-based authentication and authorization to microservices and by using IBM App Connect to seamlessly">
-    <meta property="og:url" content="http://localhost:2368/build-a-secure-microservices-based-banking-application/">
-    <meta property="article:published_time" content="2020-06-15T08:00:37.000Z">
-    <meta property="article:modified_time" content="2020-06-15T08:00:37.000Z">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Build a secure microservices-based banking application">
-    <meta name="twitter:description" content="SummaryIn this code pattern, we demonstrate the security and orchestration of microservices using a personal banking use-case scenario. DescriptionIn a microservices-based solution, security and orchestration of workflows are common requirements. By using IBM API Connect for OAuth-based authentication and authorization to microservices and by using IBM App Connect to seamlessly">
-    <meta name="twitter:url" content="http://localhost:2368/build-a-secure-microservices-based-banking-application/">
-    <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="dungbv">
+    <meta property="og:site_name" content="CodePod" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Build a secure microservices-based banking application" />
+    <meta property="og:description" content="SummaryIn this code pattern, we demonstrate the security and orchestration of microservices using a personal banking use-case scenario. DescriptionIn a microservices-based solution, security and orchestration of workflows are common requirements. By using IBM API Connect for OAuth-based authentication and authorization to microservices and by using IBM App Connect to seamlessly" />
+    <meta property="og:url" content="http://localhost:2368/build-a-secure-microservices-based-banking-application/" />
+    <meta property="article:published_time" content="2020-06-15T08:00:37.000Z" />
+    <meta property="article:modified_time" content="2020-06-15T08:00:37.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Build a secure microservices-based banking application" />
+    <meta name="twitter:description" content="SummaryIn this code pattern, we demonstrate the security and orchestration of microservices using a personal banking use-case scenario. DescriptionIn a microservices-based solution, security and orchestration of workflows are common requirements. By using IBM API Connect for OAuth-based authentication and authorization to microservices and by using IBM App Connect to seamlessly" />
+    <meta name="twitter:url" content="http://localhost:2368/build-a-secure-microservices-based-banking-application/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="dungbv" />
     
     <script type="application/ld+json">
 {
@@ -77,8 +78,8 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 3.19">
-    <link rel="alternate" type="application/rss+xml" title="CodePod" href="../rss/index.html">
+    <meta name="generator" content="Ghost 3.19" />
+    <link rel="alternate" type="application/rss+xml" title="CodePod" href="../rss/index.html" />
 
     <script>
       // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
@@ -111,7 +112,7 @@
     <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
       <span class="icon-menu"></span>
     </button>
-      <a href="../" class="m-site-name in-mobile-topbar">
+      <a href="../index.html" class="m-site-name in-mobile-topbar">
         CodePod
       </a>
     <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
@@ -129,16 +130,16 @@
           <nav class="m-nav__left">
             <ul role="submenu">
                 <li class="only-desktop" role="menuitem">
-                  <a href="../" class="m-site-name in-desktop-menu">
+                  <a class="m-site-name in-desktop-menu">
                     CodePod
                   </a>
                 </li>
                 
     <li class="nav-home" role="menuitem">
-      <a href="../">Home</a>
+      <a href="../index.html">Home</a>
     </li>
     <li class="nav-about-me" role="menuitem">
-      <a href="../about-me/">About me</a>
+      <a href="../about-me/index.html">About me</a>
     </li>
 
               <li role="menuitem" class="js-submenu-option">
@@ -151,47 +152,47 @@
                       <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
                       <div class="js-recent-articles">
                             <div>
-                              <a href="../build-fault-tolerant-microservices/" class="m-recent-article">
+                              <a href="../build-fault-tolerant-microservices/index.html" class="m-recent-article">
                                 <div class="m-recent-article__picture">
-                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=7677c2481e"></div>
                                 </div>
                                 <h3 class="m-recent-article__title js-recent-article-title" title="Build fault-tolerant microservices">
                                   Build fault-tolerant microservices
                                 </h3>
-                                <span class="m-recent-article__date">an hour ago</span>
+                                <span class="m-recent-article__date">2 hours ago</span>
                               </a>
                             </div>
                             <div>
                               <a href="index.html" class="m-recent-article">
                                 <div class="m-recent-article__picture">
-                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=7677c2481e"></div>
                                 </div>
                                 <h3 class="m-recent-article__title js-recent-article-title" title="Build a secure microservices-based banking application">
                                   Build a secure microservices-based banking application
                                 </h3>
-                                <span class="m-recent-article__date">an hour ago</span>
+                                <span class="m-recent-article__date">2 hours ago</span>
                               </a>
                             </div>
                             <div>
-                              <a href="../design-and-deliver-a-rest-based-cloud-native-application-at-lightning-speed/" class="m-recent-article">
+                              <a href="../design-and-deliver-a-rest-based-cloud-native-application-at-lightning-speed/index.html" class="m-recent-article">
                                 <div class="m-recent-article__picture">
-                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=7677c2481e"></div>
                                 </div>
                                 <h3 class="m-recent-article__title js-recent-article-title" title="Design and deliver a REST-based, cloud-native application at lightning speed">
                                   Design and deliver a REST-based, cloud-native application at lightning speed
                                 </h3>
-                                <span class="m-recent-article__date">an hour ago</span>
+                                <span class="m-recent-article__date">2 hours ago</span>
                               </a>
                             </div>
                             <div>
-                              <a href="../deploy-spring-boot-microservices-on-kubernetes/" class="m-recent-article">
+                              <a href="../deploy-spring-boot-microservices-on-kubernetes/index.html" class="m-recent-article">
                                 <div class="m-recent-article__picture">
-                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=dd1875eb09"></div>
+                                    <div class="no-image lozad" data-background-image="/assets/images/no-image.png?v=7677c2481e"></div>
                                 </div>
                                 <h3 class="m-recent-article__title js-recent-article-title" title="Deploy Spring Boot microservices on Kubernetes">
                                   Deploy Spring Boot microservices on Kubernetes
                                 </h3>
-                                <span class="m-recent-article__date">5 hours ago</span>
+                                <span class="m-recent-article__date">6 hours ago</span>
                               </a>
                             </div>
                       </div>
@@ -200,19 +201,19 @@
                       <h3 class="m-submenu-title">Tags</h3>
                         <ul>
                             <li>
-                              <a href="../tag/kubernetes/">Kubernetes</a>
+                              <a href="../tag/kubernetes/index.html">Kubernetes</a>
                             </li>
                             <li>
-                              <a href="../tag/cloud/">cloud</a>
+                              <a href="../tag/cloud/index.html">cloud</a>
                             </li>
                             <li>
-                              <a href="../tag/microservices/">microservices</a>
+                              <a href="../tag/microservices/index.html">microservices</a>
                             </li>
                             <li>
-                              <a href="../tag/rest/">rest</a>
+                              <a href="../tag/rest/index.html">rest</a>
                             </li>
                             <li>
-                              <a href="../tag/spring/">spring</a>
+                              <a href="../tag/spring/index.html">spring</a>
                             </li>
                         </ul>
                     </section>
@@ -257,13 +258,13 @@
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/build-a-secure-microservices-based-banking-application/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
                       <span class="icon-facebook"></span>
                     </a>
-                    <a href="https://twitter.com/intent/tweet?text=Build%20a%20secure%20microservices-based%20banking%20application&amp;url=http://localhost:2368/build-a-secure-microservices-based-banking-application/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <a href="https://twitter.com/intent/tweet?text=Build%20a%20secure%20microservices-based%20banking%20application&url=http://localhost:2368/build-a-secure-microservices-based-banking-application/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                       <span class="icon-twitter"></span>
                     </a>
                     <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
                       <span class="icon-arrow-top"></span>
                       <svg>
-                        <circle class="progress-ring__circle js-progress" fill="transparent" r="0"></circle>
+                        <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
                       </svg>
                     </button>
                   </div>
@@ -275,13 +276,13 @@
           <section class="m-author">
             <div class="m-author__content">
               <div class="m-author__picture">
-                <a href="../author/dungbv/" class="m-author-picture" aria-label="Author picture">
-                    <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=dd1875eb09);"></div>
+                <a href="../author/dungbv/index.html" class="m-author-picture" aria-label="Author picture">
+                    <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=7677c2481e);"></div>
                 </a>
               </div>
               <div class="m-author__info">
                 <h4 class="m-author__name">
-                  <a href="../author/dungbv/">dungbv</a>
+                  <a href="../author/dungbv/index.html">dungbv</a>
                 </h4>
                 <ul class="m-author-links">
                 </ul>
@@ -309,7 +310,7 @@
     </form>
     <div class="js-search-results hide"></div>
     <p class="m-not-found align-center hide js-no-results">
-      No results for your search, please try with something else.
+      No results for your search, try something different.
     </p>
   </div>
 </div>
@@ -318,21 +319,16 @@
 <footer class="m-footer">
   <div class="m-footer__content">
     <p class="m-footer-copyright">
-      <span>CodePod © 2020</span>
-      <span>  •  </span>
-      <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+      <span>CodePod &copy; 2020</span>      
     </p>
 
     <nav class="m-footer-social">
-    </nav>
-    <p class="m-footer-copyright jslicense">
-      <a href="../assets/html/javascript.html?v=dd1875eb09" rel="jslicense">JavaScript license information</a>
-    </p>
+    </nav>    
   </div>
 </footer>
 
     <div class="m-alert success subscribe js-alert" data-notification="subscribe">
-  Great! You've successfully subscribed.
+  Great! You&#x27;ve successfully subscribed.
   <button class="m-alert__close js-notification-close" aria-label="Close">
     <span class="icon-close"></span>
   </button>
@@ -346,7 +342,7 @@
 </div>
 
 <div class="m-alert success signin js-alert" data-notification="signin">
-  Welcome back! You've successfully signed in.
+  Welcome back! You&#x27;ve successfully signed in.
   <button class="m-alert__close js-notification-close" aria-label="Close">
     <span class="icon-close"></span>
   </button>
@@ -359,13 +355,14 @@
   </button>
 </div>
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
-    <script defer src="../assets/js/vendor/content-api.min.js?v=dd1875eb09"></script>
-    <script defer src="../assets/js/manifest.js?v=dd1875eb09"></script>
-    <script defer src="../assets/js/vendor.js?v=dd1875eb09"></script>
-    <script defer src="../assets/js/app.js?v=dd1875eb09"></script>
+    <script defer src="../assets/js/vendor/content-api.min.js?v=7677c2481e"></script>
+    <script defer src="../assets/js/manifest.js?v=7677c2481e"></script>
+    <script defer src="../assets/js/vendor.js?v=7677c2481e"></script>
+    <script defer src="../assets/js/app.js?v=7677c2481e"></script>
 
-      <script defer src="../assets/js/post.js?v=dd1875eb09"></script>
+      <script defer src="../assets/js/post.js?v=7677c2481e"></script>
 
 
     
   </body>
+</html>
