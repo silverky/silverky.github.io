@@ -1,24 +1,18 @@
 
 <head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>dungbv - CodePod</title>
-
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400%7CRoboto:400,700" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/libraries.css?v=f6b68e4dff">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css?v=f6b68e4dff">
+    <link rel="stylesheet" type="text/css" href="../../assets/built/screen.css?v=1252e32798">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="next" href="page/2/index.html">
     
     <meta property="og:site_name" content="CodePod">
     <meta property="og:type" content="profile">
@@ -46,265 +40,202 @@
     <link rel="alternate" type="application/rss+xml" title="CodePod" href="../../rss/index.html">
 
 </head>
-<body class="author-template author-dungbv nav-closed">
+<body class="author-template author-dungbv">
 
-    <div class="main-container">
-    
-        <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 ml-auto">
-                <div class="blog-logo">
-                    <a href="../../" title="CodePod">
-                        <span>CodePod</span> 
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 text-right btns">
-                <a href="index.html#" class="search" data-toggle="modal" data-target="#search">
-                    <svg width="26" height="26" viewbox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><path d="M1.29775 9.197c0-4.52 3.677-8.197 8.196-8.197 4.52 0 8.198 3.677 8.198 8.197s-3.678 8.197-8.198 8.197c-4.519 0-8.196-3.677-8.196-8.197zm15.033 6.13c1.462-1.629 2.361-3.774 2.361-6.13 0-5.071-4.126-9.197-9.198-9.197-5.071 0-9.196 4.126-9.196 9.197 0 5.071 4.125 9.197 9.196 9.197 2.356 0 4.501-.898 6.13-2.36l8.523 8.522c.097.098.225.146.353.146.128 0 .256-.048.354-.146.195-.195.195-.512 0-.707l-8.523-8.522z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-                <a href="index.html#" class="bookmark" data-toggle="modal" data-target="#bookmark">
-                    <span class="counter hidden"></span>
-                    <svg width="20" height="26" viewbox="0 0 20 27" xmlns="http://www.w3.org/2000/svg"><path d="M17.9866667 25.4668794L9.81008 19.1772018c-.0912-.0697169-.2016533-.1050806-.31008-.1050806-.1084267 0-.21888.0353637-.31008.1050806l-8.1765867 6.2896776V1.01038998h16.9733334V25.4668794zM18.4933333 0H.5066667C.2269867 0 0 .22632736 0 .505195v25.989251c0 .1929845.10944.3687923.28272.4536651.1753067.0848728.3789867.064665.5340267-.0535507L9.5 20.2158827l8.6832533 6.6786777c.0912.0697169.20064.1050806.31008.1050806.076 0 .152-.0171766.2239467-.0515299.17328-.0848728.28272-.2606806.28272-.4536651V.505195C19 .22632735 18.7730133 0 18.4933333 0z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-                <a href="index.html#" class="menu" data-toggle="modal" data-target="#menu">
-                    <svg width="30" height="22" viewbox="0 0 30 22" xmlns="http://www.w3.org/2000/svg"><path d="M.5 1C.224 1 0 .776 0 .5S.224 0 .5 0h27.874c.276 0 .5.224.5.5s-.224.5-.5.5H.5zm27.874 9c.276 0 .5.224.5.5s-.224.5-.5.5H.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h27.874zm0 10c.276 0 .5.224.5.5s-.224.5-.5.5H.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h27.874z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-            </div>
-        </div>
-    </div>           
+    <div class="site-wrapper">
 
-    <!-- Search Modal -->
-    <div class="modal fade-scale" id="search" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <form class="search">
-                                    <input id="search-field" placeholder="Search" autocomplete="off">
-                                </form>
-                                <div id="results" data-other="Other"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer"></div>
+        
+
+
+<header class="site-archive-header">
+    <div class="outer site-nav-main">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" href="../../">CodePod</a>
+            <div class="site-nav-content">
+                    <ul class="nav">
+    <li class="nav-home"><a href="../../">Home</a></li>
+    <li class="nav-about-me"><a href="../../about-me/">About me</a></li>
+</ul>
+
             </div>
         </div>
     </div>
-
-    <!-- Bookmark Modal -->
-    <div class="modal fade-scale" id="bookmark" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Bookmarks</h3>
-                                <div class="bookmark-container">
-                                    <p class="no-bookmarks">You haven't yet saved any bookmarks. To bookmark a post, just click <i class="circle"></i>.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer"></div>
+    <div class="site-nav-right">
+            <div class="social-links">
             </div>
-        </div>
-    </div>
+                <!--- <a class="rss-button" href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+</a> --->
 
-    <!-- Menu Modal -->
-    <div class="modal fade-scale" id="menu" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav class="nav">
-    <ul>
-            <li class="nav-home"><a href="../../" title="Home">Home</a></li>
-            <li class="nav-about-me"><a href="../../about-me/" title="About me">About me</a></li>
-    </ul>
+    </div>
 </nav>
-                            </div>
+    </div>
+</div>    
+
+<div class="outer site-header-background no-image">
+
+ 
+        <div class="inner">
+            <div class="site-header-content author-header">
+                    <span class="author-profile-image"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</span>
+                <div class="author-header-content">
+                    <h1 class="site-title">dungbv</h1>
+                    <div class="author-meta">
+                        <div class="author-stats">
+                            2 posts
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <!--
-                    <ul class="social">
-                        <li><a href="https://www.youtube.com/" class="youtube" title="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="http://localhost:2368/rss" title="RSS Feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                    </ul>
-                    -->
                 </div>
             </div>
         </div>
     </div>
 </header>
-        
-    <section class="author " data-author="dungbv">
 
-        <div class="author-content">
-            <h3>
-                <a href="index.html">dungbv</a>
-            </h3>
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
 
-                <p>Read <a href="index.html">more posts</a> by this author.</p>
+        <div class="post-feed">
 
-            <div class="author-meta">
-                <span class="social">
-                    
-                    
-                </span>
-                
-                
-            </div>
-        </div>
-    </section>
+                <article class="post-card post no-image no-image">
 
-<main id="content" role="main">
-    <div class="loop">
-        <div class="swiper-container">
-            <div class="next"><a href="index.html#" title="Next Post"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31.49 31.49" width="512" height="512"><path d="M21.205 5.007c-.429-.444-1.143-.444-1.587 0-.429.429-.429 1.143 0 1.571l8.047 8.047H1.111C.492 14.626 0 15.118 0 15.737c0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587.444.444 1.159.444 1.587 0l9.952-9.952c.444-.429.444-1.143 0-1.571l-9.952-9.953z" fill="#FFF"></path></svg></a></div>
-            <div class="prev"><a href="index.html#" title="Previous Post"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31.494 31.494" width="512" height="512"><path d="M10.273 5.009c.444-.444 1.143-.444 1.587 0 .429.429.429 1.143 0 1.571l-8.047 8.047h26.554c.619 0 1.127.492 1.127 1.111s-.508 1.127-1.127 1.127H3.813l8.047 8.032c.429.444.429 1.159 0 1.587-.444.444-1.143.444-1.587 0L.321 16.532c-.429-.429-.429-1.143 0-1.571l9.952-9.952z" fill="#FFF"></path></svg></a></div>
-            <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-history="makdown">
-    <article class="post no-image container article-container" data-id="5ee6ec97a9bc1715a4b40ff9">
-        <div class="row">
-            <div class="col-md-12 post-cover-container">
-                <time class="post-date" datetime="2020-06-15">15th June 2020</time>
-                <div class="post-cover post-meta ">
-                    <div class="pagination-number"></div>
-                    <h1 class="post-title col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">Makdown</h1>
-                    <div class="author-name text-center">
-                        <a href="index.html">dungbv</a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../../deploy-spring-boot-microservices-on-kubernetes/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Deploy Spring Boot microservices on Kubernetes</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>SummarySpring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster. DescriptionThe Java community is finding innovative ways</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        dungbv
                     </div>
-                    <a href="index.html#" class="read-later" data-id="5ee6ec97a9bc1715a4b40ff9"></a>
-                </div>
+            
+                    <a href="index.html" class="static-avatar author-profile-image"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="index.html">dungbv</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-06-15">15 Jun 2020</time> <span class="bull">•</span> 2 min read</span>
             </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="post-card post no-image no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../../makdown/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Makdown</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>TextIt's very easy to make some words bold and other words italic with Markdown. You can even link to Google! ListSometimes you want numbered lists: OneTwoThreeSometimes you want bullet points: Start a line with a starProfit!Alternatively, Dashes work just as wellAnd if you</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        dungbv
+                    </div>
+            
+                    <a href="index.html" class="static-avatar author-profile-image"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="index.html">dungbv</a></span>
+                <span class="post-card-byline-date"><time datetime="2020-06-15">15 Jun 2020</time> <span class="bull">•</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
         </div>
 
-        <div class="row">
-            <div class="col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">
-                <section class="post-content">
-                    <div class="reading-time d-none">1 min read</div>
-                    <div class="editor-content"><h3 id="text">Text</h3><p>It's very easy to make some words <strong>bold</strong> and other words <em>italic</em> with Markdown. You can even <a href="http://google.com">link to Google!</a></p><hr><h3 id="list">List</h3><p>Sometimes you want numbered lists:</p><ol><li>One</li><li>Two</li><li>Three</li></ol><p>Sometimes you want bullet points:</p><ul><li>Start a line with a star</li><li>Profit!</li></ul><p>Alternatively,</p><ul><li>Dashes work just as well</li><li>And if you have sub points, put two spaces before the dash or star:</li><li>Like this</li><li>And this</li></ul><hr><h3 id="image">Image</h3><p>If you want to embed images, this is how you do it:</p><figure class="kg-card kg-image-card"><img src="https://octodex.github.com/images/yaktocat.png" class="kg-image" alt="Image of Yaktocat"></figure><hr><h3 id="header-quotes">Header &amp; Quotes</h3><h1 id="structured-documents">Structured documents</h1><p>Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a <code>#</code> to create headings. Multiple <code>##</code> in a row denote smaller heading sizes.</p><h3 id="this-is-a-third-tier-heading">This is a third-tier heading</h3><p>You can use one <code>#</code> all the way up to <code>######</code> six for different heading sizes.</p><p>If you'd like to quote someone, use the &gt; character before the line:</p><blockquote>Coffee. The finest organic suspension ever devised... I beat the Borg with it.</blockquote><ul><li>Captain Janeway</li></ul><hr><h3 id="code">Code</h3><p>There are many different ways to style code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: <code>var example = true</code>.  If you've got a longer block of code, you can indent with four spaces:</p><pre><code>if (isAwesome){
-  return true
-}
-</code></pre><p>GitHub also supports something called code fencing, which allows for multiple lines without indentation:</p><pre><code>if (isAwesome){
-  return true
-}
-</code></pre><p>And if you'd like to use syntax highlighting, include the language:</p><pre><code class="language-javascript">if (isAwesome){
-  return true
-}
-</code></pre><hr><h3 id="extra">Extra</h3><p>GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!</p><p>But I have to admit, tasks lists are my favorite:</p><ul><li>[x] This is a complete item</li><li>[ ] This is an incomplete item</li></ul><p>When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!</p><p>And, of course emoji!</p></div>
-                    <div class="share-on">
-                        <p>Share on:</p>
-                        <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/makdown/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;" title="Share on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a class="share-twitter" href="https://twitter.com/share?text=Makdown&amp;url=http://localhost:2368/makdown/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://plus.google.com/share?url=http://localhost:2368/makdown/" title="Share on Google+"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
-                        <a href="https://www.reddit.com/submit?url=http://localhost:2368/makdown/%2F&amp;title=Makdown" title="Share on Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a>
-                        <a href="mailto:?subject=Makdown&amp;body=http://localhost:2368/makdown/" title="Share by Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </article>
-</div>            </div>
-        </div>
     </div>
 </main>
 
 
-            <div class="backdrop"></div>
-
-    <footer class="site-footer container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-content">
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="copyright">Copyright © 2020, <a href="../../">CodePod</a>. All Right Reserved.</p>
-                        </div>
-                    </div>
-                </div>
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../../">CodePod</a> © 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="../../">Latest Posts</a>
+                    
+                    
+                </nav>
             </div>
-        </div>
-    </footer>    
+        </footer>
+
     </div>
 
-    <script type="text/javascript" src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 
-    <script type="text/javascript" src="../../assets/js/libraries.js?v=f6b68e4dff"></script>
-
-    
-    <script>
-        var maxPages = parseInt('3');
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="../../assets/js/main.js?v=f6b68e4dff"></script>
+    <script src="../../assets/built/casper.js?v=1252e32798"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
 
     
+
+    
+
 </body>

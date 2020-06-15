@@ -1,19 +1,14 @@
 
 <head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>About me</title>
-
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400%7CRoboto:400,700" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/libraries.css?v=f6b68e4dff">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css?v=f6b68e4dff">
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=1252e32798">
 
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="index.html">
@@ -65,218 +60,122 @@
     <link rel="alternate" type="application/rss+xml" title="CodePod" href="../rss/index.html">
 
 </head>
-<body class="page-template page-about-me nav-closed">
+<body class="page-template page-about-me">
 
-    <div class="main-container">
-    
-        <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 ml-auto">
-                <div class="blog-logo">
-                    <a href="../" title="CodePod">
-                        <span>CodePod</span> 
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 text-right btns">
-                <a href="index.html#" class="search" data-toggle="modal" data-target="#search">
-                    <svg width="26" height="26" viewbox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><path d="M1.29775 9.197c0-4.52 3.677-8.197 8.196-8.197 4.52 0 8.198 3.677 8.198 8.197s-3.678 8.197-8.198 8.197c-4.519 0-8.196-3.677-8.196-8.197zm15.033 6.13c1.462-1.629 2.361-3.774 2.361-6.13 0-5.071-4.126-9.197-9.198-9.197-5.071 0-9.196 4.126-9.196 9.197 0 5.071 4.125 9.197 9.196 9.197 2.356 0 4.501-.898 6.13-2.36l8.523 8.522c.097.098.225.146.353.146.128 0 .256-.048.354-.146.195-.195.195-.512 0-.707l-8.523-8.522z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-                <a href="index.html#" class="bookmark" data-toggle="modal" data-target="#bookmark">
-                    <span class="counter hidden"></span>
-                    <svg width="20" height="26" viewbox="0 0 20 27" xmlns="http://www.w3.org/2000/svg"><path d="M17.9866667 25.4668794L9.81008 19.1772018c-.0912-.0697169-.2016533-.1050806-.31008-.1050806-.1084267 0-.21888.0353637-.31008.1050806l-8.1765867 6.2896776V1.01038998h16.9733334V25.4668794zM18.4933333 0H.5066667C.2269867 0 0 .22632736 0 .505195v25.989251c0 .1929845.10944.3687923.28272.4536651.1753067.0848728.3789867.064665.5340267-.0535507L9.5 20.2158827l8.6832533 6.6786777c.0912.0697169.20064.1050806.31008.1050806.076 0 .152-.0171766.2239467-.0515299.17328-.0848728.28272-.2606806.28272-.4536651V.505195C19 .22632735 18.7730133 0 18.4933333 0z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-                <a href="index.html#" class="menu" data-toggle="modal" data-target="#menu">
-                    <svg width="30" height="22" viewbox="0 0 30 22" xmlns="http://www.w3.org/2000/svg"><path d="M.5 1C.224 1 0 .776 0 .5S.224 0 .5 0h27.874c.276 0 .5.224.5.5s-.224.5-.5.5H.5zm27.874 9c.276 0 .5.224.5.5s-.224.5-.5.5H.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h27.874zm0 10c.276 0 .5.224.5.5s-.224.5-.5.5H.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h27.874z" fill="#B9B2A2" fill-rule="evenodd"></path></svg>
-                </a>
-            </div>
-        </div>
-    </div>           
+    <div class="site-wrapper">
 
-    <!-- Search Modal -->
-    <div class="modal fade-scale" id="search" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <form class="search">
-                                    <input id="search-field" placeholder="Search" autocomplete="off">
-                                </form>
-                                <div id="results" data-other="Other"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer"></div>
+        
+<header class="site-header">
+    <div class="outer site-nav-main">
+        <div class="inner">
+            <nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" href="../">CodePod</a>
+            <div class="site-nav-content">
+                    <ul class="nav">
+    <li class="nav-home"><a href="../">Home</a></li>
+    <li class="nav-about-me nav-current"><a href="index.html">About me</a></li>
+</ul>
+
             </div>
         </div>
     </div>
-
-    <!-- Bookmark Modal -->
-    <div class="modal fade-scale" id="bookmark" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Bookmarks</h3>
-                                <div class="bookmark-container">
-                                    <p class="no-bookmarks">You haven't yet saved any bookmarks. To bookmark a post, just click <i class="circle"></i>.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer"></div>
+    <div class="site-nav-right">
+            <div class="social-links">
             </div>
-        </div>
-    </div>
+                <!--- <a class="rss-button" href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+</a> --->
 
-    <!-- Menu Modal -->
-    <div class="modal fade-scale" id="menu" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6 ml-auto">
-                                <div class="blog-logo">
-                                    <a href="../" title="CodePod">
-                                        <span>CodePod</span> 
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 text-right btns">
-                                <a href="index.html#" data-dismiss="modal" aria-label="Close">
-                                    <svg width="23" height="21" viewbox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><g stroke="#B9B2A2" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M21.4473684.55263158L1.17249143 20.8275086M1.5526316.55263158L21.82750857 20.8275086"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav class="nav">
-    <ul>
-            <li class="nav-home"><a href="../" title="Home">Home</a></li>
-            <li class="nav-about-me nav-current"><a href="index.html" title="About me">About me</a></li>
-    </ul>
+    </div>
 </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!--
-                    <ul class="social">
-                        <li><a href="https://www.youtube.com/" class="youtube" title="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="http://localhost:2368/rss" title="RSS Feed" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                    </ul>
-                    -->
-                </div>
-            </div>
         </div>
     </div>
 </header>
-        
-<main id="content" role="main">
-    <div class="loop">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-history="about-me">
-                    <article class="post no-image page container article-container" data-id="5ee6c962a9bc1715a4b40fb1">
-                        <div class="row">
-                            <div class="col-md-12 post-cover-container">
-                                <time class="post-date" datetime="2020-06-15">June 15th, 2020</time>
-                                <div class="post-cover post-meta ">
-                                    <div class="pagination-number"></div>
-                                    <h1 class="post-title col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">About me</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">
-                                <section class="post-content">
-                                    <div class="editor-content"><p>Something more about code</p></div>
-                                </section>
-                            </div>
-                        </div>
-                    </article>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post no-image page no-image">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">About me</h1>
+            </header>
+
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Something more about code</p>
                 </div>
-            </div>
-        </div>
+            </section>
+
+        </article>
+
     </div>
 </main>
 
 
-            <div class="backdrop"></div>
 
-    <footer class="site-footer container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-content">
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="copyright">Copyright © 2020, <a href="../">CodePod</a>. All Right Reserved.</p>
-                        </div>
-                    </div>
-                </div>
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../">CodePod</a> © 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="../">Latest Posts</a>
+                    
+                    
+                </nav>
             </div>
-        </div>
-    </footer>    
+        </footer>
+
     </div>
 
-    <script type="text/javascript" src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 
-    <script type="text/javascript" src="../assets/js/libraries.js?v=f6b68e4dff"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/casper.js?v=1252e32798"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+
+        $(document).ready(function () {
+            if (action == 'subscribe') {
+                $('body').addClass("subscribe-success");
+            }
+
+            $('.subscribe-success-message .subscribe-close').click(function () {
+                $('.subscribe-success-message').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    <script>
+    $(function() {
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+    });
+</script>
+
 
     
-    <script type="text/javascript" src="../assets/js/main.js?v=f6b68e4dff"></script>
 
-    
 </body>
