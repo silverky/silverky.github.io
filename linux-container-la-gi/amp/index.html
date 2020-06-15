@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Deploy Spring Boot microservices on Kubernetes</title>
+    <title>Linux container</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -14,22 +14,26 @@
     
     <meta property="og:site_name" content="CodePod" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Deploy Spring Boot microservices on Kubernetes" />
-    <meta property="og:description" content="SummarySpring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster. DescriptionThe Java community is finding innovative ways to use technologies like Java EE" />
-    <meta property="og:url" content="http://localhost:2368/deploy-spring-boot-microservices-on-kubernetes/" />
-    <meta property="article:published_time" content="2020-06-15T03:55:44.000Z" />
-    <meta property="article:modified_time" content="2020-06-15T03:55:44.000Z" />
-    <meta property="article:tag" content="spring" />
-    <meta property="article:tag" content="Kubernetes" />
+    <meta property="og:title" content="Linux container" />
+    <meta property="og:description" content="Linux container là một tập của nhiều tiến trình được cô lập với phần còn lại của hệ thống. Tất cả các file cần thiết để có thể run các tiến trình đã được đóng gói vào một file, được gọi là image, giúp dễ dàng hơn trong qúa trình" />
+    <meta property="og:url" content="http://localhost:2368/linux-container-la-gi/" />
+    <meta property="og:image" content="http://localhost:2368/content/images/2020/06/sql_server_docker_linux_container.png" />
+    <meta property="article:published_time" content="2020-06-15T14:56:25.000Z" />
+    <meta property="article:modified_time" content="2020-06-15T15:07:51.000Z" />
+    <meta property="article:tag" content="container" />
+    <meta property="article:tag" content="virtualization" />
     
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Deploy Spring Boot microservices on Kubernetes" />
-    <meta name="twitter:description" content="SummarySpring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster. DescriptionThe Java community is finding innovative ways to use technologies like Java EE" />
-    <meta name="twitter:url" content="http://localhost:2368/deploy-spring-boot-microservices-on-kubernetes/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Linux container" />
+    <meta name="twitter:description" content="Linux container là một tập của nhiều tiến trình được cô lập với phần còn lại của hệ thống. Tất cả các file cần thiết để có thể run các tiến trình đã được đóng gói vào một file, được gọi là image, giúp dễ dàng hơn trong qúa trình" />
+    <meta name="twitter:url" content="http://localhost:2368/linux-container-la-gi/" />
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2020/06/sql_server_docker_linux_container.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="dungbv" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="spring, Kubernetes" />
+    <meta name="twitter:data2" content="container, virtualization" />
+    <meta property="og:image:width" content="750" />
+    <meta property="og:image:height" content="400" />
     
     <script type="application/ld+json">
 {
@@ -58,12 +62,18 @@
         "url": "http://localhost:2368/author/dungbv/",
         "sameAs": []
     },
-    "headline": "Deploy Spring Boot microservices on Kubernetes",
-    "url": "http://localhost:2368/deploy-spring-boot-microservices-on-kubernetes/",
-    "datePublished": "2020-06-15T03:55:44.000Z",
-    "dateModified": "2020-06-15T03:55:44.000Z",
-    "keywords": "spring, Kubernetes",
-    "description": "Summary\nSpring Boot is an opinionated framework for quickly building production-ready\nSpring applications. This pattern shows you how to create and deploy Spring Boot\nmicroservices within a polyglot application and then deploy the app to a\nKubernetes cluster.\n\nDescription\nThe Java community is finding innovative ways to use technologies like Java EE\nwithin microservices architectures. The Spring framework is an established\npresence in the Java ecosystem, and now Spring Boot is garnering a lot of",
+    "headline": "Linux container",
+    "url": "http://localhost:2368/linux-container-la-gi/",
+    "datePublished": "2020-06-15T14:56:25.000Z",
+    "dateModified": "2020-06-15T15:07:51.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2020/06/sql_server_docker_linux_container.png",
+        "width": 750,
+        "height": 400
+    },
+    "keywords": "container, virtualization",
+    "description": "Linux container là một tập của nhiều tiến trình được cô lập với phần còn lại của\nhệ thống. Tất cả các file cần thiết để có thể run các tiến trình đã được đóng\ngói vào một file, được gọi là image, giúp dễ dàng hơn trong qúa trình phát triển\ntừ development, đến testing và cuối cùng là production.\n\nHãy tưởng tượng khi bạn phát triển một ứng dụng, nó có thể phụ thuộc vào những\nthư viện khác, môi trường phát triển của mỗi developer, cũng như môi trường\ndeploy cũng có thể khác nhau. Câu trả lời để khắ",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -95,15 +105,18 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">Deploy Spring Boot microservices on Kubernetes</h1>
+                <h1 class="post-title">Linux container</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/dungbv/index.html">dungbv</a></p>
                     <time class="post-date" datetime="2020-06-15">2020-06-15</time>
                 </section>
             </header>
+            <figure class="post-image">
+                <amp-img src="http://localhost:2368/content/images/2020/06/sql_server_docker_linux_container.png" width="600" height="400" layout="responsive"></amp-img>
+            </figure>
             <section class="post-content">
 
-                <h2 id="summary">Summary</h2><p>Spring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster.</p><h2 id="description">Description</h2><p>The Java community is finding innovative ways to use technologies like Java EE within microservices architectures. The Spring framework is an established presence in the Java ecosystem, and now Spring Boot is garnering a lot of attention because it radically simplifies writing a Spring application.</p><p>Spring Boot takes an opinionated view of building Spring applications. You can use Spring Boot to create stand-alone Java applications that can be started using the Java <code>-jar</code> command or more traditional WAR deployments. Spring applications can be deployed as WAR files atop existing app servers, or they can be built into a “fat” JAR file with an embedded app server. Either choice works well within a Docker container. You can then rely on native Spring platforms like Spring Cloud to perform tasks such as service discovery, registration, and load balancing.</p><p>But what do we do in the context of polyglot applications? For managing a system of polyglot microservices, you need a general-purpose microservices and container orchestration platform, and that’s where Kubernetes shines. In this developer pattern, you’ll build an app called Office Space — and yes, it’s inspired by Michael Bolton’s idea in the movie “Office Space.” When you complete the pattern, you’ll understand how to deploy a polyglot microservices application, including Spring Boot microservices, on a Kubernetes cluster.</p><h2 id="flow">Flow</h2><figure class="kg-card kg-image-card"><amp-img src="https://developer.ibm.com/developer/patterns/deploy-spring-boot-microservices-on-kubernetes/images/Deploy-Spring-Boot-microservices-on-Kubernetes.png" class="kg-image" alt="flow" width="3334" height="1655" layout="responsive"></amp-img></figure><ol><li>The Transaction Generator service written in Python simulates transactions and pushes them to the Compute Interest microservice.</li><li>The Compute Interest microservice computes the interest and then moves the fraction of pennies to the MySQL database to be stored.</li><li>The database can be running within a container in the same deployment or on a public cloud such as IBM Cloud.</li><li>The Compute Interest microservice then calls the notification service to notify the user if an amount has been deposited in the user’s account.</li><li>The Notification service uses OpenWhisk actions to send an email message to the user. You can also invoke an OpenWhisk action to send messages to Slack.</li><li>Additionally, an OpenWhisk action to send messages to Slack can also be invoked.</li><li>The user retrieves the account balance by visiting the Node.js web interface.</li></ol>
+                <p>Linux container là một tập của nhiều tiến trình được cô lập với phần còn lại của hệ thống. Tất cả các file cần thiết để có thể run các tiến trình đã được đóng gói vào một file, được gọi là <em>image, </em>giúp dễ dàng hơn trong qúa trình phát triển từ development, đến testing và cuối cùng là production.</p><p>Hãy tưởng tượng khi bạn phát triển một ứng dụng, nó có thể phụ thuộc vào những thư viện khác, môi trường phát triển của mỗi developer, cũng như môi trường deploy cũng có thể khác nhau. Câu trả lời để khắc phục những khó khăn đó và tăng tốc qúa trình phát triển chính là container.</p><p>Container khác với virtualization như thế nào?</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption>Virtualization vs Container</figcaption></figure><ul><li>Virtualization: Sử dụng một hypervisor để gỉa lập phần cứng, cho phép chạy nhiều OS đồng thời trên cùng một phần cứng.</li><li>Container: Chia sẻ cùng nhân và chạy native trên OS, chiếm ít tài nguyên hơn virtualization.</li></ul>
 
             </section>
 
