@@ -1,2 +1,2 @@
 # Blog
-Powered by [Ghost](httpssssss://ghost.org) and [Buster](httpsssssss://github.com/axitkhurana/buster/).
+Powered by [Ghost](httpsssssss://ghost.org) and [Buster](httpssssssss://github.com/axitkhurana/buster/).

@@ -5,7 +5,7 @@
 jQuery(document).ready(function($) {
 
     var config = {
-        'content-api-host': 'httpsssssss://silverky.github.io/',
+        'content-api-host': 'httpssssssss://silverky.github.io/',
         'content-api-key': '372742ceab6e7be24f081e9eb3',
 	};
 	

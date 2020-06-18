@@ -51,7 +51,7 @@
     
     <script type="application/ld+json">
 {
-    "@context": "httpss://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
     "publisher": {
         "@type": "Organization",
@@ -92,7 +92,7 @@
     <meta name="generator" content="Ghost 3.19" />
     <link rel="alternate" type="application/rss+xml" title="CodePod" href="../rss/index.html" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="httpss://www.googletagmanager.com/gtag/js?id=UA-169407319-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169407319-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -115,7 +115,7 @@
 
       (function (d) {
         var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'httpss://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
       })(document);
@@ -286,10 +286,10 @@
               <div class="pos-relative js-post-content">
                 <div class="m-share">
                   <div class="m-share__content js-sticky">
-                    <a href="httpss://www.facebook.com/sharer/sharer.php?u=https://silverky.github.io/build-fault-tolerant-microservices/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://silverky.github.io/build-fault-tolerant-microservices/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
                       <span class="icon-facebook"></span>
                     </a>
-                    <a href="httpss://twitter.com/intent/tweet?text=Build%20fault-tolerant%20microservices&url=https://silverky.github.io/build-fault-tolerant-microservices/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <a href="https://twitter.com/intent/tweet?text=Build%20fault-tolerant%20microservices&url=https://silverky.github.io/build-fault-tolerant-microservices/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                       <span class="icon-twitter"></span>
                     </a>
                     <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
@@ -300,7 +300,7 @@
                     </button>
                   </div>
                 </div>
-                <h2 id="summary">Summary</h2><p>This developer code pattern demonstrates the deployment of a Open Liberty application using Eclipse MicroProfile on Kubernetes. It uses Prometheus to scrape application metrics and the Grafana platform for analytics and monitoring. The application uses MicroProfile Release 2.1 and focuses on fault-tolerance, which is one of the features in that release.</p><h2 id="description">Description</h2><p>All microservices fail, and it’s is important to create resilient microservices. Eclipse MicroProfile Fault Tolerance provides a simple, configurable, and flexible solution to create a fault-tolerant microservice. It offers the following fault-tolerance policies:</p><ul><li><strong>Timeout</strong>: Define a duration for timeout.</li><li><strong>Retry</strong>: Define a criteria on when to retry.</li><li><strong>Fallback</strong>: Provides an alternative solution for a failed execution.</li><li><strong>Bulkhead</strong>: Isolates failures in part of the system while the rest of the system can still function.</li><li><strong>CircuitBreaker</strong>: Offers a way of fast-fail by automatically failing execution to prevent the system overloading and indefinite wait or timeout by the clients.</li><li><strong>Asynchronous</strong>: Invoke the operation asynchronously.</li></ul><p>The main design is to separate execution logic from execution. The execution can be configured with fault-tolerance policies.</p><p>MicroProfile is a baseline platform definition that optimizes Enterprise Java for a microservices architecture and delivers application portability across multiple MicroProfile runtimes. Since the release of MicroProfile 1.2, the metrics feature comes out of the box with the platform.</p><p>The <a href="httpss://github.com/IBM/sample.microservices.web-app">sample application</a> used is a web application for managing a conference and is based on a number of discrete microservices. The front end is written in Angular; the backing microservices are in Java. All run on Open Liberty, in Docker containers managed by Kubernetes. It’s based on a <a href="httpss://github.com/eclipse/microprofile-conference">demo application</a> from the MicroProfile platform team. The <a href="httpss://github.com/IBM/sample.microservices.web-app">fork sample application</a> was converted to use Open Liberty and Microprofile Metrics, which is part of Microprofile Release 2.1.</p><h2 id="flow">Flow</h2><figure class="kg-card kg-image-card"><img src="httpss://developer.ibm.com/developer/patterns/build-fault-tolerant-microservices-with-java/images/flow.png" class="kg-image" alt="flow"></figure><ol><li>Create Kubernetes service in <a href="httpss://cloud.ibm.com/?cm_sp=ibmdev-_-developer-patterns-_-cloudreg">IBM Cloud</a>.</li><li>Deploy all the microservices into the Kubernetes cluster.</li><li>Deploy Prometheus server as a service into the Kubernetes cluster.</li><li>Deploy Grafana as a service into the Kubernetes cluster.</li><li>Use Ingress gateway to expose the web application from the Kubernetes cluster.</li><li>User accesses the web application through browser.</li></ol><h2 id="instructions">Instructions</h2><p>Ready to get started? See the <a href="httpss://github.com/IBM/java-microprofile-fault-monitoring/blob/master/README.md">README</a> for step-by-step instructions.</p>
+                <h2 id="summary">Summary</h2><p>This developer code pattern demonstrates the deployment of a Open Liberty application using Eclipse MicroProfile on Kubernetes. It uses Prometheus to scrape application metrics and the Grafana platform for analytics and monitoring. The application uses MicroProfile Release 2.1 and focuses on fault-tolerance, which is one of the features in that release.</p><h2 id="description">Description</h2><p>All microservices fail, and it’s is important to create resilient microservices. Eclipse MicroProfile Fault Tolerance provides a simple, configurable, and flexible solution to create a fault-tolerant microservice. It offers the following fault-tolerance policies:</p><ul><li><strong>Timeout</strong>: Define a duration for timeout.</li><li><strong>Retry</strong>: Define a criteria on when to retry.</li><li><strong>Fallback</strong>: Provides an alternative solution for a failed execution.</li><li><strong>Bulkhead</strong>: Isolates failures in part of the system while the rest of the system can still function.</li><li><strong>CircuitBreaker</strong>: Offers a way of fast-fail by automatically failing execution to prevent the system overloading and indefinite wait or timeout by the clients.</li><li><strong>Asynchronous</strong>: Invoke the operation asynchronously.</li></ul><p>The main design is to separate execution logic from execution. The execution can be configured with fault-tolerance policies.</p><p>MicroProfile is a baseline platform definition that optimizes Enterprise Java for a microservices architecture and delivers application portability across multiple MicroProfile runtimes. Since the release of MicroProfile 1.2, the metrics feature comes out of the box with the platform.</p><p>The <a href="https://github.com/IBM/sample.microservices.web-app">sample application</a> used is a web application for managing a conference and is based on a number of discrete microservices. The front end is written in Angular; the backing microservices are in Java. All run on Open Liberty, in Docker containers managed by Kubernetes. It’s based on a <a href="https://github.com/eclipse/microprofile-conference">demo application</a> from the MicroProfile platform team. The <a href="https://github.com/IBM/sample.microservices.web-app">fork sample application</a> was converted to use Open Liberty and Microprofile Metrics, which is part of Microprofile Release 2.1.</p><h2 id="flow">Flow</h2><figure class="kg-card kg-image-card"><img src="https://developer.ibm.com/developer/patterns/build-fault-tolerant-microservices-with-java/images/flow.png" class="kg-image" alt="flow"></figure><ol><li>Create Kubernetes service in <a href="https://cloud.ibm.com/?cm_sp=ibmdev-_-developer-patterns-_-cloudreg">IBM Cloud</a>.</li><li>Deploy all the microservices into the Kubernetes cluster.</li><li>Deploy Prometheus server as a service into the Kubernetes cluster.</li><li>Deploy Grafana as a service into the Kubernetes cluster.</li><li>Use Ingress gateway to expose the web application from the Kubernetes cluster.</li><li>User accesses the web application through browser.</li></ol><h2 id="instructions">Instructions</h2><p>Ready to get started? See the <a href="https://github.com/IBM/java-microprofile-fault-monitoring/blob/master/README.md">README</a> for step-by-step instructions.</p>
               </div>
             </div>
           </div>
@@ -401,7 +401,7 @@
     <span class="icon-close"></span>
   </button>
 </div>
-    <script crossorigin="anonymous" src="httpss://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
     <script defer src="../assets/js/vendor/content-api.min.js?v=4102b82801"></script>
     <script defer src="../assets/js/manifest.js?v=4102b82801"></script>
     <script defer src="../assets/js/vendor.js?v=4102b82801"></script>

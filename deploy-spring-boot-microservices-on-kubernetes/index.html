@@ -52,7 +52,7 @@
     
     <script type="application/ld+json">
 {
-    "@context": "httpss://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
     "publisher": {
         "@type": "Organization",
@@ -93,7 +93,7 @@
     <meta name="generator" content="Ghost 3.19" />
     <link rel="alternate" type="application/rss+xml" title="CodePod" href="../rss/index.html" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="httpss://www.googletagmanager.com/gtag/js?id=UA-169407319-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169407319-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -116,7 +116,7 @@
 
       (function (d) {
         var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'httpss://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
       })(document);
@@ -287,10 +287,10 @@
               <div class="pos-relative js-post-content">
                 <div class="m-share">
                   <div class="m-share__content js-sticky">
-                    <a href="httpss://www.facebook.com/sharer/sharer.php?u=https://silverky.github.io/deploy-spring-boot-microservices-on-kubernetes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://silverky.github.io/deploy-spring-boot-microservices-on-kubernetes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
                       <span class="icon-facebook"></span>
                     </a>
-                    <a href="httpss://twitter.com/intent/tweet?text=Deploy%20Spring%20Boot%20microservices%20on%20Kubernetes&url=https://silverky.github.io/deploy-spring-boot-microservices-on-kubernetes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <a href="https://twitter.com/intent/tweet?text=Deploy%20Spring%20Boot%20microservices%20on%20Kubernetes&url=https://silverky.github.io/deploy-spring-boot-microservices-on-kubernetes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                       <span class="icon-twitter"></span>
                     </a>
                     <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
@@ -301,7 +301,7 @@
                     </button>
                   </div>
                 </div>
-                <h2 id="summary">Summary</h2><p>Spring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster.</p><h2 id="description">Description</h2><p>The Java community is finding innovative ways to use technologies like Java EE within microservices architectures. The Spring framework is an established presence in the Java ecosystem, and now Spring Boot is garnering a lot of attention because it radically simplifies writing a Spring application.</p><p>Spring Boot takes an opinionated view of building Spring applications. You can use Spring Boot to create stand-alone Java applications that can be started using the Java <code>-jar</code> command or more traditional WAR deployments. Spring applications can be deployed as WAR files atop existing app servers, or they can be built into a “fat” JAR file with an embedded app server. Either choice works well within a Docker container. You can then rely on native Spring platforms like Spring Cloud to perform tasks such as service discovery, registration, and load balancing.</p><p>But what do we do in the context of polyglot applications? For managing a system of polyglot microservices, you need a general-purpose microservices and container orchestration platform, and that’s where Kubernetes shines. In this developer pattern, you’ll build an app called Office Space — and yes, it’s inspired by Michael Bolton’s idea in the movie “Office Space.” When you complete the pattern, you’ll understand how to deploy a polyglot microservices application, including Spring Boot microservices, on a Kubernetes cluster.</p><h2 id="flow">Flow</h2><figure class="kg-card kg-image-card"><img src="httpss://developer.ibm.com/developer/patterns/deploy-spring-boot-microservices-on-kubernetes/images/Deploy-Spring-Boot-microservices-on-Kubernetes.png" class="kg-image" alt="flow"></figure><ol><li>The Transaction Generator service written in Python simulates transactions and pushes them to the Compute Interest microservice.</li><li>The Compute Interest microservice computes the interest and then moves the fraction of pennies to the MySQL database to be stored.</li><li>The database can be running within a container in the same deployment or on a public cloud such as IBM Cloud.</li><li>The Compute Interest microservice then calls the notification service to notify the user if an amount has been deposited in the user’s account.</li><li>The Notification service uses OpenWhisk actions to send an email message to the user. You can also invoke an OpenWhisk action to send messages to Slack.</li><li>Additionally, an OpenWhisk action to send messages to Slack can also be invoked.</li><li>The user retrieves the account balance by visiting the Node.js web interface.</li></ol>
+                <h2 id="summary">Summary</h2><p>Spring Boot is an opinionated framework for quickly building production-ready Spring applications. This pattern shows you how to create and deploy Spring Boot microservices within a polyglot application and then deploy the app to a Kubernetes cluster.</p><h2 id="description">Description</h2><p>The Java community is finding innovative ways to use technologies like Java EE within microservices architectures. The Spring framework is an established presence in the Java ecosystem, and now Spring Boot is garnering a lot of attention because it radically simplifies writing a Spring application.</p><p>Spring Boot takes an opinionated view of building Spring applications. You can use Spring Boot to create stand-alone Java applications that can be started using the Java <code>-jar</code> command or more traditional WAR deployments. Spring applications can be deployed as WAR files atop existing app servers, or they can be built into a “fat” JAR file with an embedded app server. Either choice works well within a Docker container. You can then rely on native Spring platforms like Spring Cloud to perform tasks such as service discovery, registration, and load balancing.</p><p>But what do we do in the context of polyglot applications? For managing a system of polyglot microservices, you need a general-purpose microservices and container orchestration platform, and that’s where Kubernetes shines. In this developer pattern, you’ll build an app called Office Space — and yes, it’s inspired by Michael Bolton’s idea in the movie “Office Space.” When you complete the pattern, you’ll understand how to deploy a polyglot microservices application, including Spring Boot microservices, on a Kubernetes cluster.</p><h2 id="flow">Flow</h2><figure class="kg-card kg-image-card"><img src="https://developer.ibm.com/developer/patterns/deploy-spring-boot-microservices-on-kubernetes/images/Deploy-Spring-Boot-microservices-on-Kubernetes.png" class="kg-image" alt="flow"></figure><ol><li>The Transaction Generator service written in Python simulates transactions and pushes them to the Compute Interest microservice.</li><li>The Compute Interest microservice computes the interest and then moves the fraction of pennies to the MySQL database to be stored.</li><li>The database can be running within a container in the same deployment or on a public cloud such as IBM Cloud.</li><li>The Compute Interest microservice then calls the notification service to notify the user if an amount has been deposited in the user’s account.</li><li>The Notification service uses OpenWhisk actions to send an email message to the user. You can also invoke an OpenWhisk action to send messages to Slack.</li><li>Additionally, an OpenWhisk action to send messages to Slack can also be invoked.</li><li>The user retrieves the account balance by visiting the Node.js web interface.</li></ol>
               </div>
             </div>
           </div>
@@ -402,7 +402,7 @@
     <span class="icon-close"></span>
   </button>
 </div>
-    <script crossorigin="anonymous" src="httpss://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
     <script defer src="../assets/js/vendor/content-api.min.js?v=4102b82801"></script>
     <script defer src="../assets/js/manifest.js?v=4102b82801"></script>
     <script defer src="../assets/js/vendor.js?v=4102b82801"></script>
