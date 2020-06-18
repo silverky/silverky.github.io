@@ -867,7 +867,7 @@ header h5:before{
     margin-top: 20px;
 }
 
-.article-container iframe[src*="httpssssss://www.youtube.com/"] {
+.article-container iframe[src*="httpsssssss://www.youtube.com/"] {
     height: calc(730px / 1.77777778) !important;
     width: 100% !important;
 }
@@ -1524,7 +1524,7 @@ footer .copyright{
         width: calc(100% + 350px);
         margin: 55px 0 55px -175px;
     }
-    .article-container iframe[src*="httpssssss://www.youtube.com/"]{
+    .article-container iframe[src*="httpsssssss://www.youtube.com/"]{
         height: calc(610px / 1.77777778) !important;
     }
 }
@@ -1560,7 +1560,7 @@ footer .copyright{
         width: calc(100% + 150px);
         margin: 55px 0 55px -75px;
     }
-    .article-container iframe[src*="httpssssss://www.youtube.com/"]{
+    .article-container iframe[src*="httpsssssss://www.youtube.com/"]{
         height: calc(570px / 1.77777778) !important;
     }
 }
@@ -1662,7 +1662,7 @@ footer .copyright{
         width: calc(100% + 120px);
         margin: 55px 0 55px -60px;
     }
-    .article-container iframe[src*="httpssssss://www.youtube.com/"]{
+    .article-container iframe[src*="httpsssssss://www.youtube.com/"]{
         height: calc(420px / 1.77777778) !important;
     }
 }
@@ -1737,7 +1737,7 @@ footer .copyright{
         width: calc(100% + 30px);
         margin: 55px 0 55px -15px;
     }
-    .article-container iframe[src*="httpssssss://www.youtube.com/"]{
+    .article-container iframe[src*="httpsssssss://www.youtube.com/"]{
         height: calc((100vw - 60px) / 1.77777778) !important;
     }
     pre{
